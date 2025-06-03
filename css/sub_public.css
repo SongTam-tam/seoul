@@ -17,13 +17,15 @@
     position: fixed;
     left: 0;
     top: 0;
+    background-color: #fff;
+    z-index: 5;
 }
 /* 헤더 */
 .search {
     position: absolute;
     left: 0;
     top: -500px;
-    z-index: 10;
+    z-index: 20;
     width: 100%;
     height: 500px;
     background-color: rgba(8, 30, 30, 1);
@@ -116,6 +118,7 @@
 #header.on {
     height: 590px;
     background-color: rgba(8, 30, 30, 0.7);
+    backdrop-filter: blur(10px);
 }
 /* 헤더 js */
 #header .inner {
@@ -189,8 +192,8 @@
     margin: 0;
 }
 /* 네비게이션 li 부분 js  */
-#header .gnb ul li h3 {
-    color: #fff;
+#header .gnb ul .li-box h3 {
+    color: #333;
     font-size: 18px;
     font-weight: 600;
 }
@@ -245,10 +248,11 @@
     margin-right: 20px;
 }
 #header .icon li a {
+    color: #333;
 }
 #header .icon li a i {
-    color: #fff;
     font-size: 26px;
+    color: #333;
 }
 /* 아이콘 */
 #header .login {
