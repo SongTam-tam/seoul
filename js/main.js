@@ -15,36 +15,64 @@ const mainPage = () => {
         interval2 = 20001,
         imgurl,
         isplay = true;
-    // gage.animate({ transform: ['scaleX(0)', 'scaleX(1)'] }, 20000);
-    gage.animate({ transform: ['scaleX(0)', 'scaleX(1)'] }, 20000);
+
+    let x = gage.animate({ transform: ['scaleX(0)', 'scaleX(1)'], Infinity }, 20000);
     visualSpan.textContent = `${cnt + 1} / 2`;
     const banner = () => {
         imgurl = `videos/seoulAsan${cnt}.mp4`;
         video.setAttribute('src', imgurl);
-        gage.animate({ transform: ['scaleX(0)', 'scaleX(1)'] }, 20000);
         visualSpan.textContent = `${cnt + 1} / 2`;
     };
     const visualTimer = () => {
         cnt = cnt > 0 ? (cnt = 0) : cnt + 1;
+        x = gage.animate({ transform: ['scaleX(0)', 'scaleX(1)'], Infinity }, 20000);
         banner();
     };
     timer = setInterval(visualTimer, interval);
+
+    prev.addEventListener('click', (e) => {
+        cnt = cnt < 1 ? (cnt = 1) : cnt - 1;
+        x = gage.animate({ transform: ['scaleX(0)', 'scaleX(1)'], Infinity }, 20000);
+        if (!isplay) {
+            x.pause();
+            banner();
+            video.pause();
+            clearInterval(timer);
+        } else {
+            banner();
+            clearInterval(timer);
+            timer = setInterval(visualTimer, interval);
+        }
+
+        // timer = setInterval(visualTimer, interval);
+    });
     next.addEventListener('click', (e) => {
         cnt = cnt > 0 ? (cnt = 0) : cnt + 1;
-        banner();
-        clearInterval(visualTimer);
-        timer = setInterval(visualTimer, interval);
+        x = gage.animate({ transform: ['scaleX(0)', 'scaleX(1)'], Infinity }, 20000);
+        if (!isplay) {
+            x.pause();
+            banner();
+            video.pause();
+            clearInterval(timer);
+        } else {
+            banner();
+            clearInterval(timer);
+            timer = setInterval(visualTimer, interval);
+        }
+
+        // timer = setInterval(visualTimer, interval);
     });
     stop.addEventListener('click', (e) => {
         if (isplay) {
             video.pause();
             stopi.classList.replace('xi-pause', 'xi-play');
-            clearInterval(visualTimer);
-            gage.animate({ transform: ['scaleX(0)', 'scaleX(1)'] }, 20000).pause();
+            clearInterval(timer);
+            x.pause();
         } else {
             video.play();
             timer = setInterval(visualTimer, interval);
             stopi.classList.replace('xi-play', 'xi-pause');
+            x.play();
         }
         isplay = !isplay;
     });
