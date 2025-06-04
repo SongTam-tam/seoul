@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Document</title>
+        <title>SeoulAsan</title>
         <link rel="stylesheet" href="css/reset.css" />
         <link rel="stylesheet" href="css/public.css" />
         <link rel="stylesheet" href="css/main.css" />
@@ -25,7 +25,27 @@
             </header>
             <!-- header -->
             <section id="visual">
-                <img src="images/main-visual.png" alt="" />
+                <video
+                    src="./videos/seoulAsan0.mp4"
+                    class="video-visual"
+                    muted
+                    autoplay
+                    loop
+                ></video>
+                <div class="inner">
+                    <div class="gage">
+                        <span>1 / 2</span>
+                        <p></p>
+                        <strong></strong>
+                        <div class="btn">
+                            <button class="prev"><i class="xi-angle-left"></i></button>
+                            <button class="next"><i class="xi-angle-right"></i></button>
+                            <button class="stop"><i class="xi-pause"></i></button>
+                        </div>
+                    </div>
+                    <!-- gage -->
+                </div>
+                <!-- inner -->
             </section>
             <!-- visual -->
             <footer id="footer">
@@ -37,5 +57,6 @@
         <!-- wrap -->
         <script src="./js/main.js"></script>
         <script type="module" src="./js/public.js"></script>
+        <script type="module" src="./js/main.js"></script>
     </body>
 </html>

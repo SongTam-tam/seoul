@@ -1,0 +1,108 @@
+#visual {
+    width: 100%;
+    height: 1080px;
+    position: relative;
+}
+#visual .video-visual {
+    width: 100%;
+    position: absolute;
+    z-index: -10;
+    left: 0;
+    top: 0px;
+    height: 1100px;
+}
+#visual .gage {
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+#visual .gage p {
+    width: 252px;
+    height: 4px;
+    background-color: #fff;
+    position: absolute;
+    left: 100px;
+    top: 805px;
+}
+#visual .gage strong {
+    display: block;
+    width: 252px;
+    height: 4px;
+    background-color: #55a3a3;
+    transform: scaleX(0);
+    position: absolute;
+    left: 100px;
+    top: 805px;
+
+    transform-origin: left;
+}
+/* #visual .gage strong.on {
+    transform: scaleX(1);
+    transition: 20s linear;
+} */
+#visual .gage span {
+    position: absolute;
+    top: 793px;
+    left: 50px;
+    color: #fff;
+    text-align: center;
+    width: 40px;
+}
+#visual .gage .btn {
+}
+#visual .gage .btn i {
+    /* border: 1px solid #fff; */
+
+    display: block;
+}
+#visual .gage .btn .prev {
+    background-color: transparent;
+    font-size: 14px;
+    color: #fff;
+    border: 1px solid #fff;
+    border-radius: 100%;
+    position: absolute;
+    top: 795px;
+    left: 10px;
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#visual .gage .btn .next {
+    background-color: transparent;
+    font-size: 14px;
+    color: #fff;
+    border: 1px solid #fff;
+    border-radius: 100%;
+    position: absolute;
+    top: 795px;
+    left: 400px;
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* display: inline-block; */
+}
+#visual .gage .btn .stop {
+    background-color: transparent;
+    font-size: 14px;
+    color: #fff;
+    border: none;
+    position: absolute;
+    top: 795px;
+    left: 370px;
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
