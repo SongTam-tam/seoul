@@ -150,9 +150,89 @@ const therapy = () => {
         });
     });
 };
+const hospital = () => {
+    const next = get('#main .hospital .inner .next');
+    const prev = get('#main .hospital .inner .prev');
+    const lis = getAll('#main .hospital .inner .hidden-pic .hidden li');
+    const pic = get('#main .hospital .inner .pic a');
+    const bg = get('#main .hospital .bg');
+    const hidden = get('#main .hospital .inner .hidden');
+
+    let first,
+        last,
+        cnt = 0;
+    lis[cnt].classList.add('onn');
+
+    lis.forEach((item, idx) => {
+        item.addEventListener('mouseenter', (e) => {
+            lis.forEach((item, dx) => {
+                item.classList.remove('on');
+            });
+            lis[idx].classList.add('on');
+        });
+        item.addEventListener('mouseleave', (e) => {
+            item.classList.remove('on');
+        });
+        item.addEventListener('click', (e) => {
+            cnt = idx;
+            lis.forEach((item, dx) => {
+                item.classList.remove('onn');
+            });
+            lis[cnt].classList.add('onn');
+            pic.style.backgroundImage = `url(images/asan${cnt}.png)`;
+            bg.style.backgroundImage = `url(images/asan${cnt}.png)`;
+        });
+    });
+
+    next.addEventListener('click', (e) => {
+        cnt = cnt > lis.length - 2 ? (cnt = 0) : cnt + 1;
+        first = hidden.firstElementChild;
+        hidden.append(first);
+        lis.forEach((item, dx) => {
+            item.classList.remove('onn');
+        });
+        pic.style.backgroundImage = `url(images/asan${cnt}.png)`;
+        bg.style.backgroundImage = `url(images/asan${cnt}.png)`;
+        lis[cnt].classList.add('onn');
+    });
+    prev.addEventListener('click', (e) => {
+        cnt = cnt < 1 ? (cnt = lis.length - 1) : cnt - 1;
+        last = hidden.lastElementChild;
+        hidden.prepend(last);
+        lis.forEach((item, dx) => {
+            item.classList.remove('onn');
+        });
+        pic.style.backgroundImage = `url(images/asan${cnt}.png)`;
+        bg.style.backgroundImage = `url(images/asan${cnt}.png)`;
+        lis[cnt].classList.add('onn');
+    });
+};
+const youtube = () => {
+    const lis = getAll('#main .youtube .inner .rotate li');
+    const rota = get('#main .youtube .inner .rotate');
+    const gage = get('#main .youtube .inner .gage2');
+
+    let cnt = 0,
+        interval = 5000,
+        x,
+        first,
+        last,
+        timer = null;
+
+    x = gage.animate({ transform: ['scaleX(0)', 'scaleX(1)'], Infinity }, 5000);
+
+    const youtubeTimer = () => {
+        first = rota.firstElementChild;
+        rota.append(first);
+        x = gage.animate({ transform: ['scaleX(0)', 'scaleX(1)'], Infinity }, 5000);
+    };
+    timer = setInterval(youtubeTimer, interval);
+};
 
 (() => {
     mainPage();
     staff();
     therapy();
+    hospital();
+    youtube();
 })();
