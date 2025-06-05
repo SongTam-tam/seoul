@@ -106,3 +106,458 @@
     align-items: center;
     justify-content: center;
 }
+/* visual */
+#main .therapy {
+    position: relative;
+}
+#main .therapy::after {
+    content: 'ASAN’S SPECIALTY';
+    font-size: 250px;
+    font-weight: 800;
+    position: absolute;
+    letter-spacing: 6px;
+    line-height: 1.3;
+    bottom: -190px;
+    left: 380px;
+    color: #009999;
+    /* border: 1px solid #106e6e; */
+    opacity: 0.1;
+    z-index: -1000;
+    width: 2509px;
+}
+#main .therapy .inner {
+    padding-top: 160px;
+}
+#main .therapy .inner > strong {
+    font-size: 25px;
+    font-weight: 800;
+    display: block;
+    text-align: left;
+    color: #55a3a3;
+}
+#main .therapy .inner > h2 {
+    text-align: left;
+    font-size: 50px;
+    color: #000;
+    font-weight: 700;
+    margin-top: 28px;
+}
+#main .therapy .inner > p {
+    text-align: left;
+    color: #000;
+    font-size: 20px;
+    font-weight: 400;
+    margin-top: 14px;
+    margin-bottom: 95px;
+}
+#main .therapy .inner .medical {
+}
+#main .therapy .inner .medical .con {
+    display: flex;
+    width: 1400px;
+    margin-bottom: 160px;
+}
+#main .therapy .inner .medical .con li {
+    flex: 1;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    transition: 0.8s;
+    border-right: 3px solid #fff;
+}
+#main .therapy .inner .medical .con li:last-child {
+    border-radius: 0px 20px 20px 0px;
+}
+#main .therapy .inner .medical .con li:first-child {
+    border-radius: 20px 0 0 20px;
+}
+
+#main .therapy .inner .medical .con li:hover {
+    flex: 5;
+}
+#main .therapy .inner .medical .con li a {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    width: 879px;
+    display: block;
+    height: 520px;
+    transition: 0.5s;
+}
+#main .therapy .inner .medical .con li:nth-child(1) a {
+    background-image: url(../images/therapy0.png);
+}
+#main .therapy .inner .medical .con li:nth-child(2) a {
+    background-image: url(../images/therapy1.png);
+}
+#main .therapy .inner .medical .con li:nth-child(3) a {
+    background-image: url(../images/therapy2.png);
+}
+#main .therapy .inner .medical .con li:nth-child(4) a {
+    background-image: url(../images/therapy3.png);
+}
+#main .therapy .inner .medical .con li a img {
+}
+#main .therapy .inner .medical .con li strong {
+    position: absolute;
+    left: 74px;
+    top: 394px;
+    z-index: 5;
+    width: 200px;
+    height: 41px;
+    font-size: 34px;
+    font-weight: 600;
+    color: #fff;
+    opacity: 0;
+    transition: 0.8s;
+}
+#main .therapy .inner .medical .con li strong.on {
+    top: 342px;
+    opacity: 1;
+}
+#main .therapy .inner .medical .con li p {
+    position: absolute;
+    z-index: 5;
+    left: 80px;
+    top: 450px;
+    width: 140px;
+    height: 39px;
+    border: 1px solid #fff;
+    /* padding: 10px 20px; */
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 20px;
+    line-height: 39px;
+    cursor: pointer;
+    text-align: left;
+    padding-left: 32px;
+    transition: 0.8s;
+    opacity: 0;
+}
+#main .therapy .inner .medical .con li p.on {
+    top: 401px;
+    opacity: 1;
+}
+
+#main .therapy .inner .medical .con li p i {
+    position: absolute;
+    z-index: 5;
+    left: 120px;
+    top: 50%;
+    transform: translateY(-50%);
+    vertical-align: middle;
+    margin-left: 12px;
+}
+/* therapy */
+
+/* #main .medical-staff .inner strong {
+    font-size: 25px;
+    font-weight: 800;
+    display: block;
+    text-align: center;
+    color: #55a3a3;
+}
+#main .medical-staff .inner h2 {
+    text-align: center;
+    font-size: 50px;
+    color: #fff;
+    font-weight: 700;
+    margin-top: 28px;
+}
+#main .medical-staff .inner p {
+    text-align: center;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 400;
+    margin-top: 14px;
+} */
+#main .medical-staff {
+    background-image: url(../images/img_BG.png);
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+}
+#main .medical-staff .inner {
+    padding-top: 160px;
+    height: 920px;
+    /* overflow: hidden; */
+    /* border: 1px solid #fff; */
+}
+#main .medical-staff .inner strong {
+    font-size: 25px;
+    font-weight: 800;
+    display: block;
+    text-align: center;
+    color: #55a3a3;
+}
+#main .medical-staff .inner h2 {
+    text-align: center;
+    font-size: 50px;
+    color: #fff;
+    font-weight: 700;
+    margin-top: 28px;
+}
+#main .medical-staff .inner p {
+    text-align: center;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 400;
+    margin-top: 14px;
+}
+#main .medical-staff .inner .staff .con {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    transition: 0.5s;
+    /* margin-top: 100px; */
+}
+#main .medical-staff .inner .staff .con > li {
+    margin-top: 130px;
+    width: 300px;
+    height: 410px;
+    border-radius: 220px;
+    background-color: #fff;
+    margin-left: 30px;
+    overflow: hidden;
+    transition: 0.3s;
+}
+#main .medical-staff .inner .staff .con > li:nth-child(1) {
+    position: absolute;
+    left: -300px;
+    top: 0;
+}
+#main .medical-staff .inner .staff .con > li:nth-child(2) {
+    position: absolute;
+    left: 30px;
+    top: 0;
+}
+#main .medical-staff .inner .staff .con > li:nth-child(3) {
+    position: absolute;
+    left: 360px;
+    top: 0;
+}
+#main .medical-staff .inner .staff .con > li:nth-child(4) {
+    position: absolute;
+    left: 690px;
+    top: 0;
+}
+#main .medical-staff .inner .staff .con > li:nth-child(5) {
+    position: absolute;
+    left: 1020px;
+    top: 0;
+}
+#main .medical-staff .inner .staff .con > li:nth-child(6) {
+    position: absolute;
+    left: 1350px;
+    top: 0;
+}
+#main .medical-staff .inner .staff .con > li:nth-child(7) {
+    position: absolute;
+    left: 1680px;
+    top: 0;
+}
+#main .medical-staff .inner .staff .con > li:nth-child(8) {
+    position: absolute;
+    left: 2010px;
+    top: 0;
+}
+#main .medical-staff .inner .staff .con > li:nth-child(9) {
+    position: absolute;
+    left: 2360px;
+    top: 0;
+}
+#main .medical-staff .inner .staff .con > li:nth-child(10) {
+    position: absolute;
+    left: 2710px;
+    top: 0;
+}
+
+#main .medical-staff .inner .staff .con > li a {
+}
+#main .medical-staff .inner .staff .con > li a img {
+}
+#main .medical-staff .inner .staff .con li .con-box li {
+    width: 300px;
+    height: 410px;
+    background-color: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(10px);
+    position: absolute;
+    left: 0;
+    top: 500px;
+    transition: 0.5s;
+}
+#main .medical-staff .inner .staff .con li .con-box li strong {
+    font-size: 18px;
+    font-weight: 700;
+    color: #106e6e;
+    margin-top: 186px;
+    display: block;
+    text-align: left;
+    margin-left: 28px;
+    line-height: 1.3;
+}
+#main .medical-staff .inner .staff .con li .con-box li p:nth-child(2) {
+    display: block;
+    text-align: left;
+    margin-left: 28px;
+    font-size: 26px;
+    font-weight: 700;
+    color: #282828;
+    margin-top: 6px;
+    line-height: 1.3;
+}
+#main .medical-staff .inner .staff .con li .con-box li p:nth-child(3) {
+    display: block;
+    text-align: left;
+    margin-left: 28px;
+    color: #282828;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 1.3;
+    margin-top: 6px;
+}
+#main .medical-staff .inner .staff .con li .con-box li span {
+    position: absolute;
+    top: 252px;
+    left: 92px;
+    font-size: 20px;
+    font-weight: 400;
+    color: #282828;
+}
+#main .medical-staff .inner .staff .con li .con-box li span::after {
+    content: '';
+    width: 1.5px;
+    height: 18px;
+    background-color: #797979;
+    position: absolute;
+    left: -6px;
+    top: 55%;
+    transform: translateY(-50%);
+}
+#main .medical-staff .inner .staff .con li .con-box li button {
+    margin-left: 76px;
+    width: 149px;
+    height: 39px;
+    background-color: black;
+    border: none;
+    cursor: pointer;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+    position: relative;
+    text-align: left;
+    padding-left: 20px;
+    border-radius: 20px;
+    margin-top: 40px;
+    vertical-align: middle;
+}
+#main .medical-staff .inner .staff .con li .con-box li button.on {
+    background-color: #0b4b4b;
+}
+#main .medical-staff .inner .staff .con li .con-box li button i {
+    position: absolute;
+    left: 115px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 20px;
+}
+/* medical-staff */
+#main .hospital {
+    position: relative;
+    height: 1185px;
+}
+#main .hospital::before {
+    background-color: #282828;
+    height: 1185px;
+    z-index: -1000;
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 1185px;
+}
+#main .hospital::after {
+    background-image: url(../images/아산사회복재단.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0 0;
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 1185px;
+    opacity: 0.1;
+    z-index: -100;
+}
+#main .hospital .inner {
+    padding-top: 160px;
+}
+#main .hospital .inner h2 {
+    font-size: 50px;
+    font-weight: 700;
+    color: #fff;
+    text-align: center;
+}
+#main .hospital .inner p {
+    font-size: 20px;
+    font-weight: 400;
+    color: #fff;
+    text-align: center;
+    margin-top: 14px;
+    margin-bottom: 88px;
+}
+#main .hospital .inner .pic {
+    width: 1400px;
+    height: 579px;
+    overflow: hidden;
+    cursor: pointer;
+}
+#main .hospital .inner .pic a {
+    background-image: url(../images/아산사회복재단.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0 0;
+    display: block;
+    width: 1400px;
+    height: 579px;
+}
+
+#main .hospital .inner .btns {
+}
+#main .hospital .inner .btns .next {
+}
+#main .hospital .inner .btns .prev {
+}
+#main .hospital .inner .hidden {
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    gap: 16px;
+    width: 572px;
+    height: 44px;
+    margin-left: 414px;
+    margin-top: 28px;
+    flex-shrink: 0 0 auto;
+}
+#main .hospital .inner .hidden-pic {
+}
+#main .hospital .inner .hidden-pic .hidden li {
+    width: 180px;
+    height: 44px;
+    border: 1px solid #f5f5f5;
+    border-radius: 50px;
+    cursor: pointer;
+    /* position: absolute; */
+}
+#main .hospital .inner .hidden-pic .hidden li p {
+    font-size: 18px;
+    color: #fff;
+    font-weight: 400;
+    line-height: 13px;
+    /* margin-bottom: 11px; */
+    cursor: pointer;
+}
