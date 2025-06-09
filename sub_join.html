@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>sub_join</title>
+        <link rel="stylesheet" href="css/reset.css" />
+        <link rel="stylesheet" href="css/sub_public.css" />
+        <link rel="stylesheet" href="css/sub_join.css" />
+        <link rel="stylesheet" href="css/ani.css" />
+        <link rel="stylesheet" href="css/subLayout.css" />
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/gh/xpressengine/xeicon@2.3.3/xeicon.min.css"
+        />
+    </head>
+    <body>
+        <div id="wrap">
+            <div class="search">
+                <!-- 검색부분 -->
+            </div>
+            <!-- search -->
+            <header id="header">
+                <!-- 헤더부분 -->
+                <!-- header부분 inner -->
+            </header>
+            <!-- header -->
+            <section id="container">
+                <div class="inner">
+                    <div class="join">
+                        <form class="join-form">
+                            <fieldset>
+                                <legend>회원가입</legend>
+                                <div class="form-group">
+                                    <label for="name">이름 </label>
+                                    <input
+                                        type="text"
+                                        id="name"
+                                        name="name"
+                                        placeholder="이름"
+                                        class="w865"
+                                    />
+                                </div>
+                                <div class="form-group">
+                                    <label for="userid">아이디</label>
+                                    <input
+                                        type="text"
+                                        id="userid"
+                                        name="userid"
+                                        placeholder="아이디"
+                                        class="w140"
+                                    />
+                                    <button class="check-id">중복확인</button>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="userpw">비밀번호</label>
+                                    <input
+                                        type="password"
+                                        id="userpw"
+                                        name="userpw"
+                                        placeholder="비밀번호"
+                                        class="w865"
+                                    />
+                                </div>
+                                <div class="form-group">
+                                    <label for="tel">연락처</label>
+                                    <input
+                                        type="text"
+                                        id="tel1"
+                                        name="tel1"
+                                        placeholder="010"
+                                        class="w280"
+                                    />
+                                    <span>-</span>
+                                    <input
+                                        type="text"
+                                        id="tel2"
+                                        name="tel2"
+                                        placeholder="1234"
+                                        class="w280"
+                                    />
+                                    <span>-</span>
+                                    <input
+                                        type="text"
+                                        id="tel3"
+                                        name="tel3"
+                                        placeholder="5678"
+                                        class="w280"
+                                    />
+                                </div>
+                                <div class="form-group">
+                                    <label for="addr_main">주소</label>
+                                    <input
+                                        type="text"
+                                        id="addr_main"
+                                        name="addr_main"
+                                        placeholder="주소"
+                                        class="w340"
+                                    />
+                                    <button class="addr">우편번호 찾기</button>
+                                    <div class="bg">
+                                        <div class="popup">
+                                            <button type="button" class="close">
+                                                <i class="xi-close xi-2x"></i>
+                                            </button>
+                                            <p>우편번호 서비스</p>
+                                            <div class="line"></div>
+                                            <span>예) 서초대로 77길 41</span>
+                                            <div class="line"></div>
+                                            <strong>tip</strong>
+                                            <ul>
+                                                <li>
+                                                    <p>
+                                                        아래와 같은 조합으로 검색을 하시면 정확한
+                                                        결과가 검색됩니다.
+                                                    </p>
+                                                </li>
+                                                <li>
+                                                    <p>도로명 + 건물번호</p>
+                                                    <p>예)판교댁로 235, 제주 첨단로 242</p>
+                                                </li>
+                                                <li>
+                                                    <p>지역명(동/리) + 번지</p>
+                                                    <p>예) 삼평동 681, 제주 영평동 2821</p>
+                                                </li>
+                                                <li>
+                                                    <p>지역명(동/리) + 건물명 (아파트명)</p>
+                                                    <p>예) 분당 주공, 연수동 주공3차</p>
+                                                </li>
+                                                <li>
+                                                    <p>사서함명 + 번호</p>
+                                                    <p>예) 분당 우체국 사서함 1-100</p>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+
+                                    <input
+                                        type="text"
+                                        id="addr_detail"
+                                        name="addr_detail"
+                                        placeholder="상세주소"
+                                        class="w340"
+                                    />
+                                </div>
+                                <div class="form-group">
+                                    <label for="email">이메일</label>
+                                    <input
+                                        type="text"
+                                        id="email"
+                                        name="email"
+                                        placeholder="email"
+                                        class="w340"
+                                    />
+                                    <select name="email_domain" id="email_domain" class="w505">
+                                        <option>@ naver.com</option>
+                                        <option>@ daum.net</option>
+                                        <option>@ nate.net</option>
+                                        <option>@ google.com</option>
+                                    </select>
+                                </div>
+                            </fieldset>
+                        </form>
+
+                        <div class="chk">
+                            <p>
+                                <input type="checkbox" name="all" id="all" class="chk" />
+                                <label for="all">모두 동의합니다</label>
+                            </p>
+                            <div class="line"></div>
+                            <p>
+                                <input type="checkbox" name="chk2" id="chk2" class="chk" />
+                                <label for="chk2">[ 필수 ] 만 14세 이상입니다.</label>
+                            </p>
+                            <p>
+                                <input type="checkbox" name="chk3" id="chk3" class="chk" />
+                                <label for="chk3"
+                                    >[ 필수 ] <span>개인정보 수집 및 이용</span>에
+                                    동의합니다.</label
+                                >
+                            </p>
+                            <p>
+                                <input type="checkbox" name="chk4" id="chk4" class="chk" />
+                                <label for="chk4"
+                                    >[ 필수 ] <span>최종이용자 이용약관</span>에 동의합니다.</label
+                                >
+                            </p>
+                        </div>
+
+                        <div class="btn"><button>가입하기</button></div>
+                    </div>
+                </div>
+                <!-- inner -->
+            </section>
+            <!-- container -->
+            <footer id="footer">
+                <!-- 푸터부분 -->
+                <!-- inner -->
+            </footer>
+            <!-- footer -->
+        </div>
+        <!-- wrap -->
+        <script type="module" src="./js/subLayout.js"></script>
+        <script type="module" src="./js/sub_public.js"></script>
+        <script src="./js/sub_join.js"></script>
+    </body>
+</html>

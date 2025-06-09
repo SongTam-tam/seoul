@@ -1,0 +1,449 @@
+/* 영역만 잡기 - 후에 수정 !!!!!!!!!!!!!!! */
+
+#container .inner {
+    display: flex;
+    /* position: relative; */
+}
+
+#container .inner .left-nav {
+    /* width: 220px; */
+}
+
+#container .inner .content {
+    width: 1100px;
+    margin-top: 250px;
+    margin-left: auto; 우측 배치 유지하고 싶으면 flex 기준으로 설정
+    padding-bottom: 320px;
+}
+
+/* ///////////////////// */
+
+#container .inner .content .notice {
+    margin-bottom: 40px;
+}
+#container .inner .content .notice h2 {
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 60px;
+}
+#container .inner .content .notice p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    color: #081E1E;
+}
+#container .inner .content .notice p:nth-of-type(1) {
+    margin-bottom: 30px;
+}
+#container .inner .content .notice p:nth-of-type(2) {
+    margin-bottom: 40px;
+}
+#container .inner .content .notice p strong {
+    color: #106E6E;
+    font-weight: 500;
+}
+#container .inner .content .notice > button {
+    width: 213px;
+    height: 56px;
+    font-size: 18px;
+    font-weight: 500;
+    border: none;
+    color: #fff;
+    background-color: #106E6E;
+    border-radius: 30px;
+    cursor: pointer;
+}
+#container .inner .content .notice button a {
+
+}
+#container .inner .content .tel {
+    width: 1100px;
+    height: 220px;
+    border: 1px solid #cbcbcb;
+    border-radius: 10px;
+    box-sizing: border-box;
+    padding: 30px;
+    position: relative;
+}
+#container .inner .content .tel h3 {
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 26px;
+}
+#container .inner .content .tel span {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    display: inline-block;
+    margin-bottom: 22px;
+}
+#container .inner .content .tel button {
+    position: absolute;
+    top: 52%;
+    left: 280px;
+    width: 95px;
+    height: 24px;
+    font-size: 12px;
+    font-weight: 500;
+    border-radius: 5px;
+    color: #081E1E;
+    border-color: #cbcbcb;
+    background-color: #fff;
+    outline: none;
+    box-shadow: none;
+}
+#container .inner .content .tel .contact {
+    display: flex;
+    
+    position: relative;
+}
+#container .inner .content .tel .contact li {
+    font-size: 16px;
+    font-weight: 400;
+    margin-right: 40px;
+}
+#container .inner .content .tel .contact li:nth-of-type(1)::before {
+    /* display: none; */
+}
+#container .inner .content .tel .contact li:nth-of-type(2),
+#container .inner .content .tel .contact li:nth-of-type(3) {
+    transform: translateY(15%)
+}
+#container .inner .content .tel .contact li:nth-of-type(2)::before,
+#container .inner .content .tel .contact li:nth-of-type(3)::before
+ {
+    content: '';
+    height: 14px;
+    width: 1px;
+    background-color: #cbcbcb;
+    position: absolute;
+    left:-20px;    
+    top: 8px;
+}
+#container .inner .content .tel .contact li strong {
+    font-size: 22px;
+    font-weight: 500;
+    color: #009999;
+}
+#container .inner .content .tel .contact li a {
+}
+
+
+#container .inner .content .mail {
+    margin-top: 50px;
+}
+#container .inner .content .mail fieldset {}
+#container .inner .content .mail fieldset legend {
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 35px;
+}
+#container .inner .content .mail fieldset .form-n-t {
+    margin-bottom: 30px;
+}
+#container .inner .content .mail fieldset .form-n-t .form-name {
+    display: inline-block;
+    margin-right: 170px;
+}
+#container .inner .content .mail fieldset .form-n-t .form-name label {
+    font-size: 18px;
+    font-weight: 600;
+    display: block;
+    margin-bottom: 12px;
+}
+#container .inner .content .mail fieldset .form-n-t .form-name label span {
+    color: #009999;
+}
+#container .inner .content .mail fieldset .form-n-t .form-name input {
+    width: 320px;
+    height: 58px;
+    border: 1px solid #cbcbcb;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 400;
+    color: #797979;
+    text-indent: 10px;
+}
+#container .inner .content .mail fieldset .form-n-t .form-tel {
+    display: inline-block;
+}
+#container .inner .content .mail fieldset .form-n-t .form-tel label {
+    font-size: 18px;
+    font-weight: 600;
+    display: block;
+    margin-bottom: 10px;
+}
+#container .inner .content .mail fieldset .form-n-t .form-tel label span {
+    color: #009999;
+}
+#container .inner .content .mail fieldset .form-n-t .form-tel input {
+    width: 400px;   
+    height: 58px;
+    border: 1px solid #cbcbcb;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 400;
+    color: #797979;
+    text-indent: 10px;
+}
+
+#container .inner .content .mail fieldset .form-detail {
+    margin-bottom: 30px;
+}
+#container .inner .content .mail fieldset .form-detail label {
+    font-size: 18px;
+    font-weight: 600;
+    display: block;
+    margin-bottom: 6px;
+}
+#container .inner .content .mail fieldset .form-detail span {
+    font-size: 12px;
+    font-weight: 300;
+    color: #797979;
+    display: block;
+    margin-bottom: 12px;
+}
+#container .inner .content .mail fieldset .form-detail textarea {
+    width: 1100px;
+    height: 200px;
+    resize: none;
+    border: 1px solid #cbcbcb;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 400;
+    color: #797979;
+    text-indent: 10px;
+    /* font-family: "Rubik 80s Fade", system-ui; */
+    box-sizing: border-box;
+    padding-top: 10px;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+#container .inner .content .mail fieldset .form-veri {
+    margin-bottom: 40px;
+    display: flex;
+    align-items: center;
+}
+#container .inner .content .mail fieldset .form-veri label {    
+    font-size: 18px;
+    font-weight: 600;
+    margin-right: 20px;
+}
+#container .inner .content .mail fieldset .form-veri .switch {
+    display: inline-block;
+    display: flex;
+    align-items: center;
+}
+#container .inner .content .mail fieldset .form-veri .switch .random {
+    display: inline-block;
+    width: 120px;
+    height: 45px;
+    border: 1px solid #cbcbcb;
+    margin-right: 10px;
+    font-size: 22px;
+    text-align: center;
+    font-family: "Rubik 80s Fade", system-ui;
+    line-height: 45px;
+}
+#container .inner .content .mail fieldset .form-veri .switch button {
+    display: inline-block;
+    width: 45px;
+    height: 45px;
+    background-color: #eef0f5;
+    border: none;
+    cursor: pointer;
+    margin-right: 15px;
+}
+#container .inner .content .mail fieldset .form-veri .switch button a {}
+#container .inner .content .mail fieldset .form-veri .switch button a svg {}
+#container .inner .content .mail fieldset .form-veri input {
+    width: 245px;
+    height: 50px;
+    border: 1px solid #cbcbcb;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 400;
+    color: #c6c6c6;
+    text-indent: 10px;
+}
+#container .inner .content .mail fieldset .form-agree {
+    width: 100%;
+    height: 270px;
+    border: 1px solid #cbcbcb;
+    background-color: #f5f5f5;
+    border-radius: 5px;
+}
+#container .inner .content .mail fieldset .form-agree .ag-check {
+    height: 75px;
+    border-bottom: 1px solid #cbcbcb;
+    background-color: #ffffff;
+    position: relative;
+    border-radius: 5px;
+}
+#container .inner .content .mail fieldset .form-agree .ag-check input {
+    position: absolute;
+    left: -900px;
+    top: 0;
+}
+#container .inner .content .mail fieldset .form-agree .ag-check input::before {
+    content:'';
+    width: 24px;
+    height: 24px;
+    border-radius: 3px;
+    border: 1px solid #cbcbcb;
+    position: absolute;
+    top: 24px;
+    left: 925px;
+}
+#container .inner .content .mail fieldset .form-agree .ag-check input:hover::before {
+    background-color: #eef0f5;
+}
+#container .inner .content .mail fieldset .form-agree .ag-check input:checked::before {
+    background-color: #ffffff;
+    content:'';
+    background-image: url(../images/check_24dp.png);
+    color:tomato;
+    background-size: cover;    
+}
+#container .inner .content .mail fieldset .form-agree .ag-check label {
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 75px;
+    margin-left: 70px;
+}
+#container .inner .content .mail fieldset .form-agree .ag-detail {
+    margin-top: 25px;
+}
+#container .inner .content .mail fieldset .form-agree .ag-detail p {
+    font-size: 16px;
+    font-weight: 400;
+    text-indent: 30px;
+    line-height: 26px;
+}
+#container .inner .content .mail fieldset .form-agree .ag-detail ul {
+    text-indent: 50px;
+}
+#container .inner .content .mail fieldset .form-agree .ag-detail ul li {
+    line-height: 30px;
+    position: relative;
+}
+#container .inner .content .mail fieldset .form-agree .ag-detail ul li:nth-child(2) {
+    color:#009999;
+}
+#container .inner .content .mail fieldset .form-agree .ag-detail ul li::before {
+    content: '';
+    display: inline-block;
+    width: 3px;
+    height: 3px;
+    border-radius: 3px;
+    background-color: #081e1e;
+    position: absolute;
+    left: 40px;
+    top: 50%;
+}
+#container .inner .content .mail fieldset .submit {
+    display: block;
+    margin: auto;
+    width: 125px;
+    height: 56px;
+    font-size: 20px;
+    font-weight: 500;
+    color: #fff;
+    background-color: #106E6E;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+#container .inner .content .account {
+    margin-bottom: 30px;
+}
+#container .inner .content .account h3 {
+    font-size: 22px;
+    font-weight: 700;
+    color:#106E6E;
+    margin-bottom: 25px;
+    margin-top: 70px;
+}
+#container .inner .content .account p:nth-of-type(1) {
+    font-size: 16px;
+    font-weight: 400;
+}
+#container .inner .content .account table {
+    width: 100%;
+    height: 90px;
+    /* border: 1px solid #cbcbcb; */
+    margin-top: 20px;
+    margin-bottom: 15px;
+    border-collapse: collapse;
+}
+#container .inner .content .account table col.first {
+    width: 290px;
+}
+#container .inner .content .account table col.second {
+    /* width: 405px; */
+}
+#container .inner .content .account table col.third {
+    /* width: 405px; */
+}
+#container .inner .content .account table thead {
+}
+#container .inner .content .account table thead tr {
+    height: 45px;
+    text-align: center;
+    line-height: 45px;
+    background-color: #f5f5f5;
+}
+#container .inner .content .account table thead tr th {
+    border: 1px solid #cbcbcb;
+    border-left: none;
+    font-size: 14px;    
+    font-weight: 500;
+    color: #081E1E;
+}
+#container .inner .content .account table thead tr th:nth-child(1),
+#container .inner .content .account table tbody tr td:nth-child(1) {
+  border-left: none;
+}
+
+#container .inner .content .account table tr th:last-child,
+#container .inner .content .account table tr td:last-child {
+  border-right: none;
+} 
+#container .inner .content .account table tbody {
+}
+#container .inner .content .account table tbody tr {
+    height: 45px;
+    text-align: center;
+    line-height: 45px;
+}
+#container .inner .content .account table tbody tr td {
+    border: 1px solid #cbcbcb;
+    font-size: 14px;    
+    font-weight: 500;
+    color: #081E1E;
+}
+#container .inner .content .account p:nth-of-type(2) {
+    font-size: 14px;
+    font-weight: 500;
+    color: #106E6E;
+}
+
+#container .inner .content .court {
+    margin-bottom: 200px;
+}
+#container .inner .content .court h3 {
+    font-size: 22px;
+    font-weight: 700;
+    color:#106E6E;
+    margin-bottom: 25px;
+}
+#container .inner .content .court p {
+}
+
+/* .rubik-80s-fade-regular {
+    font-family: "Rubik 80s Fade", system-ui;
+    font-weight: 400;
+    font-style: normal;
+  } */
+  

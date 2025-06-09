@@ -1,0 +1,180 @@
+/* 영역만 잡기 - 후에 수정 !!!!!!!!!!!!!!! */
+
+#container .inner {
+    display: flex;
+}
+
+#container .inner .left-nav {
+}
+
+#container .inner .content {
+    width: 1100px;
+    margin-top: 250px;
+    margin-left: auto; /*우측 배치 유지하고 싶으면 flex 기준으로 설정*/
+    padding-bottom: 320px;
+}
+
+/* ///////////////////////// */
+
+#container .inner .content h2 {
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 60px;
+}
+
+#container .inner .content .srch {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+#container .inner .content .srch p {
+    font-size: 14px;
+    font-weight: 600;
+}
+#container .inner .content .srch p span {
+    color: #009999;
+}
+#container .inner .content .srch .srch-box {
+    position: relative;
+}
+#container .inner .content .srch .srch-box input {
+    width: 249px;
+    height: 45px;
+    border: none;
+    border-bottom: 1px solid #797979;
+    text-indent: 10px;
+}
+#container .inner .content .srch .srch-box i {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    /* z-index: 10; */
+}
+
+#container .inner .content .noti-wrap {
+}
+#container .inner .content .noti-wrap .table {
+    border-collapse: collapse;
+    margin-bottom: 40px;
+}
+#container .inner .content .noti-wrap .table col.num {
+    width: 78px;
+}
+#container .inner .content .noti-wrap .table col.title {
+    width: 828px;
+}
+#container .inner .content .noti-wrap .table col.file {
+    width: 59px;
+}
+#container .inner .content .noti-wrap .table col.date {
+    width: 135px;
+}
+#container .inner .content .noti-wrap .table tbody {
+}
+#container .inner .content .noti-wrap .table tbody tr {
+    border-bottom: 1px solid #cbcbcb;
+}
+#container .inner .content .noti-wrap .table tbody tr td {
+    box-sizing: border-box;
+}
+#container .inner .content .noti-wrap .table tbody tr:nth-child(1) {
+    border-top: 1px solid #cbcbcb;
+}
+#container .inner .content .noti-wrap .table tbody tr td:nth-child(1),
+#container .inner .content .noti-wrap .table tbody tr td:nth-child(4) {
+    font-size: 14px;
+    font-weight: 500;
+    color: #797979;
+}
+#container .inner .content .noti-wrap .table tbody tr td:nth-child(2) {
+    font-size: 16px;
+    font-weight: 500;
+}
+#container .inner .content .noti-wrap .table tbody tr td:nth-child(3) {
+}
+#container .inner .content .noti-wrap .table tbody tr:nth-child(1) td:nth-child(2),
+#container .inner .content .noti-wrap .table tbody tr:nth-child(2) td:nth-child(2),
+#container .inner .content .noti-wrap .table tbody tr:nth-child(3) td:nth-child(2),
+#container .inner .content .noti-wrap .table tbody tr:nth-child(4) td:nth-child(2) {
+    padding-left: 30px;
+}
+#container .inner .content .noti-wrap .table tbody tr:nth-child(1) td:nth-child(2)::before,
+#container .inner .content .noti-wrap .table tbody tr:nth-child(2) td:nth-child(2)::before,
+#container .inner .content .noti-wrap .table tbody tr:nth-child(3) td:nth-child(2)::before,
+#container .inner .content .noti-wrap .table tbody tr:nth-child(4) td:nth-child(2)::before {
+    content: '공지';
+    font-size: 12px;
+    font-weight: 500;
+    width: 38px;
+    height: 22px;
+    color: #fff;
+    background-color: #0b4b4b;
+    border-radius: 15px;
+    box-sizing: border-box;
+    padding: 1px 8px 3px 8px;
+    margin-right: 10px;
+}
+#container .inner .content .noti-wrap .table tbody tr td {
+    vertical-align: middle;
+    line-height: 60px;
+}
+#container .inner .content .noti-wrap .table tbody tr td:nth-child(1),
+#container .inner .content .noti-wrap .table tbody tr td:nth-child(3),
+#container .inner .content .noti-wrap .table tbody tr td:nth-child(4) {
+    text-align: center;
+}
+#container .inner .content .noti-wrap .table tbody tr td:nth-child(2) {
+    box-sizing: border-box;
+    padding-left: 30px;
+}
+#container .inner .content .noti-wrap .table tr td a {
+}
+#container .inner .content .noti-wrap .table tr td a i {
+    font-size: 22px;
+}
+#container .inner .content .page {
+    display: flex;
+    justify-content: center;
+}
+#container .inner .content .page ul {
+    display: flex;
+    font-size: 14px;
+    font-weight: 500;
+    color: #282828;
+}
+#container .inner .content .page ul li {
+    margin-right: 35px;
+}
+#container .inner .content .page ul .prev {
+}
+#container .inner .content .page ul .prev a {
+}
+#container .inner .content .page ul .prev i {
+}
+#container .inner .content .page ul .num {
+}
+#container .inner .content .page ul .num a {
+    position: relative;
+}
+#container .inner .content .page ul .num a.on {
+    color: #ffffff;
+}
+#container .inner .content .page ul .num a.on::after {
+    content:'';
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    display: inline-block;
+    background-color: #009999;
+    position: absolute;
+    top: -30%;
+    left: -165%;
+    z-index: -1;
+}
+#container .inner .content .page ul .next {
+}
+#container .inner .content .page ul .next a {
+}
+#container .inner .content .page ul .next i {
+}

@@ -1,0 +1,321 @@
+/* 영역만 잡기 - 후에 수정 !!!!!!!!!!!!!!! */
+
+#container .inner {
+    display: flex;
+    /* position: relative; */
+}
+
+#container .inner .left-nav {
+    /* width: 220px; */
+}
+
+#container .inner .content {
+    width: 1100px;
+    margin-top: 250px;
+    margin-left: auto; /* 우측 배치 유지하고 싶으면 flex 기준으로 설정 */
+    padding-bottom: 320px;
+}
+
+/* ///////////////////// */
+
+#container .inner .content h2 {
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 48px;
+}
+#container .inner .content .offer {
+    position: relative;
+}
+#container .inner .content .offer h3 {
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 25px;
+    color: #009999;
+}
+#container .inner .content .offer h3::after {
+    content: '';
+    width: 40px;
+    height: 2px;
+    background-color: #009999;
+    position: absolute;
+    left: 0;
+    top: 35px;
+}
+#container .inner .content .offer .reco {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 70px;
+}
+#container .inner .content .offer .reco li {
+    width: 350px;
+    height: 300px;
+    border-radius: 16px;
+    position: relative;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+#container .inner .content .offer .reco li > a {
+    display: inline-block;
+    width: 350px;
+    height: 190px;
+    overflow: hidden;
+}
+#container .inner .content .offer .reco li > a > img {
+    width: 350px;
+    height: 190px;
+    transform: scale(1);
+    transition: 0.5s;
+}
+#container .inner .content .offer .reco li:hover img {
+    transform: scale(1.05);
+}
+#container .inner .content .offer .reco li dl {
+}
+#container .inner .content .offer .reco li dl dt {
+}
+#container .inner .content .offer .reco li dl dt a {
+    font-size: 20px;
+    font-weight: 500;
+    display: block;
+    margin-top: 12px;
+    margin-left: 14px;
+}
+#container .inner .content .offer .reco li dl dd {
+    font-size: 14px;
+    font-weight: 400;
+    color: #797979;
+    margin-left: 14px;
+}
+#container .inner .content .offer .reco li .dtt {
+    font-size: 12px;
+    font-weight: 400;
+    color: #797979;
+    position: absolute;
+    left: 0;
+    bottom: 15px;
+    margin-left: 14px;
+}
+#container .inner .content .offer .reco li .dwn {
+}
+#container .inner .content .offer .reco li .dwn a {
+    font-size: 12px;
+    font-weight: 500;
+    color: #282828;
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+}
+#container .inner .content .offer .reco li .dwn a::after {
+    content: '';
+}
+#container .inner .content .offer .reco li .dwn a i {
+    color: #282828;
+    margin-left: 3px;
+}
+
+#container .inner .content .srch {
+    display: flex;
+    position: relative;
+}
+#container .inner .content .srch p {
+    font-size: 16px;
+    font-weight: 600;
+}
+#container .inner .content .srch p span {
+    color: #009999;
+}
+#container .inner .content .srch .srch-right {
+    display: flex;
+    position: absolute;
+    right: 0;
+}
+#container .inner .content .srch .srch-right .select {
+    width: 172px;
+    height: 45px;
+    line-height: 42px;
+    border: 1px solid #cbcbcb;
+    color: #c6c6c6;
+    border-radius: 5px;
+    display: block;
+    box-sizing: border-box;
+    padding-left: 10px;
+    font-size: 14px;
+    font-weight: 500;
+    position: relative;
+}
+#container .inner .content .srch .srch-right .select span {
+}
+#container .inner .content .srch .srch-right .select i {
+    color: #081e1e;
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+#container .inner .content .srch .srch-right .cate {
+    position: absolute;
+    top: 50px;
+    width: 172px;
+    height: 0px;
+    background-color: #fff;
+    border-radius: 5px;
+    overflow: hidden;
+    transition: 0.3s;
+}
+#container .inner .content .srch .srch-right .cate.on {
+    height: 240px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border: 1px solid #cbcbcb;
+}
+#container .inner .content .srch .srch-right .cate li {
+    box-sizing: border-box;
+    padding-left: 10px;
+    height: 40px;
+    line-height: 36px;
+}
+#container .inner .content .srch .srch-right .cate li:hover {
+    background-color: #f5f5f5;
+}
+#container .inner .content .srch .srch-right .cate li a {
+    font-size: 14px;
+    font-weight: 400;
+    color: #081e1e;
+}
+#container .inner .content .srch .srch-right .srch-box {
+    margin-left: 20px;
+}
+#container .inner .content .srch .srch-right .srch-box input {
+    width: 249px;
+    height: 45px;
+    border: none;
+    border-bottom: 1px solid #797979;
+    position: relative;
+    text-indent: 10px;
+}
+#container .inner .content .srch .srch-box input:focus {
+    outline: none;
+}
+#container .inner .content .srch .srch-right .srch-box i {
+    position: absolute;
+    right: 10px;
+    top: 30%;
+    z-index: 10;
+}
+
+#container .inner .content .srch .srch-right .cate li {
+}
+#container .inner .content .srch .srch-right .cate li.on {
+}
+#container .inner .content .srch .srch-right .cate li a {
+}
+
+/* xi-angle-down-min */
+
+#container .inner .content .ed-wrap {
+    margin-top: 45px;
+}
+#container .inner .content .ed-wrap .ed-list {
+    min-height: 950px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+#container .inner .content .ed-wrap .ed-list li {
+    width: 1100px;
+    height: 170px;
+    border: 1px solid #c6c6c6;
+    border-radius: 10px;
+}
+#container .inner .content .ed-wrap .ed-list li .list-in {
+    display: flex;
+    margin-top: 21px;
+    margin-left: 30px;
+}
+#container .inner .content .ed-wrap .ed-list li .list-in > a {
+}
+#container .inner .content .ed-wrap .ed-list li .list-in > a > img {
+    width: 190px;
+    height: 128px;
+}
+#container .inner .content .ed-wrap .ed-list li .list-in .about {
+    margin-left: 40px;
+    margin-top: 15px;
+}
+#container .inner .content .ed-wrap .ed-list li .list-in .about h4 {
+    font-size: 22px;
+    font-weight: 500;
+}
+#container .inner .content .ed-wrap .ed-list li .list-in .about .team {
+    font-size: 16px;
+    font-weight: 400;
+    color: #c6c6c6;
+    margin-bottom: 12px;
+}
+#container .inner .content .ed-wrap .ed-list li .list-in .about .team a {
+    font-size: 16px;
+    font-weight: 400;
+    color: #c6c6c6;
+}
+#container .inner .content .ed-wrap .ed-list li .list-in .about .down {
+}
+#container .inner .content .ed-wrap .ed-list li .list-in .about .down span {
+    font-size: 14px;
+    font-weight: 500;
+    color: #282828;
+}
+#container .inner .content .ed-wrap .ed-list li .list-in .about .down img {
+}
+
+#container .inner .content .page {
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+#container .inner .content .page ul {
+    display: flex;
+}
+#container .inner .content .page ul li {
+}
+#container .inner .content .page ul .prev {
+    position: absolute;
+    top: 60px;
+    left: 300px;
+}
+#container .inner .content .page ul .prev a {
+}
+#container .inner .content .page ul .next {
+    position: absolute;
+    top: 60px;
+    right: 300px;
+}
+#container .inner .content .page ul .next a {
+}
+#container .inner .content .page ul .num {
+    font-size: 14px;
+    font-weight: 500;
+    margin-top: 60px;
+    position: relative;
+}
+#container .inner .content .page ul .num a {
+    margin-right: 33px;
+}
+#container .inner .content .page ul .num a.on {
+    color: #ffffff;
+    z-index: 1;
+}
+#container .inner .content .page ul .num a.on::after {
+    content:'';
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    background-color: #009999;
+    border-radius: 35px;
+    z-index: -1;
+    position: absolute;
+    top: -22%;
+    left: -33%;
+}
+#container .inner .content .page ul .num:nth-of-type(11) a {
+    margin-right: 0 !important;
+}

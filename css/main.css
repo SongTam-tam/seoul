@@ -12,7 +12,7 @@ body {
     position: absolute;
     z-index: -10;
     left: 0;
-    top: 0px;
+    top: -20px;
     height: 1100px;
 }
 #visual .gage {

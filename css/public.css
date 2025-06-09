@@ -567,3 +567,122 @@
 .w362 {
     width: 322px;
 }
+#top {
+    position: fixed;
+    right: 150px;
+    bottom: 88px;
+    cursor: pointer;
+    z-index: 10000;
+    /* border: 1px solid #000; */
+}
+#top a {
+    display: block;
+    width: 58px;
+    height: 58px;
+}
+#top button {
+    width: 58px;
+    height: 58px;
+    border-radius: 100%;
+    background-color: rgba(8, 30, 30, 1);
+    text-align: center;
+    border: none;
+    cursor: pointer;
+}
+#top button img {
+    vertical-align: middle;
+    cursor: pointer;
+}
+#right-menu {
+    width: 58px;
+    height: 156px;
+    background-color: #282828;
+    border-radius: 100px;
+    text-align: center;
+    padding-top: 46px;
+    padding-bottom: 46px;
+    position: fixed;
+    right: 150px;
+    top: 418px;
+    z-index: 1000;
+}
+#right-menu ul {
+    /* border: 1px solid #000; */
+}
+#right-menu ul li {
+    margin-top: 46px;
+    position: relative;
+    cursor: pointer;
+}
+#right-menu ul li:nth-child(1) {
+    margin-top: 0;
+}
+/* #right-menu ul li:nth-child(1)::after {
+    content: '';
+    background-color: rgba(8, 30, 30, 1);
+    position: absolute;
+    right: 68px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 0px;
+    height: 40px;
+    color: #fff;
+    line-height: 40px;
+    border-radius: 100px;
+    transform-origin: right;
+    transition: 0.5s;
+} */
+#right-menu ul li:nth-child(1) p {
+    background-color: rgba(8, 30, 30, 1);
+    position: absolute;
+    right: 68px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 0px;
+    height: 40px;
+    color: #fff;
+    line-height: 40px;
+    border-radius: 100px;
+    transform-origin: right;
+    transition: 0.5s;
+    overflow: hidden;
+}
+#right-menu ul li:nth-child(1):hover p {
+    width: 130px;
+}
+#right-menu ul li:nth-child(2) p {
+    background-color: rgba(8, 30, 30, 1);
+    position: absolute;
+    right: 68px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 0px;
+    height: 40px;
+    color: #fff;
+    line-height: 40px;
+    border-radius: 100px;
+    transform-origin: right;
+    transition: 0.5s;
+    overflow: hidden;
+}
+#right-menu ul li:nth-child(2):hover p {
+    width: 130px;
+}
+#right-menu ul li:nth-child(3) p {
+    background-color: rgba(8, 30, 30, 1);
+    position: absolute;
+    right: 68px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 0px;
+    height: 40px;
+    color: #fff;
+    line-height: 40px;
+    border-radius: 100px;
+    transform-origin: right;
+    transition: 0.5s;
+    overflow: hidden;
+}
+#right-menu ul li:nth-child(3):hover p {
+    width: 130px;
+}

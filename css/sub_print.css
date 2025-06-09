@@ -1,0 +1,203 @@
+.left-nav {
+    margin-top: 150px;
+}
+
+#container .inner {
+    display: flex;
+    justify-content: right;
+}
+.con-box {
+    margin-top: 250px;
+    width: 1100px;
+}
+.con-box h3 {
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 45px;
+}
+.con-box .step {
+}
+.con-box .step h4 {
+    color: #106e6e;
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 40px;
+}
+.con-box .step ul {
+    display: flex;
+    position: relative;
+    justify-content: center;
+}
+.con-box .step ul li {
+    width: 200px;
+    border: 1px solid #cbcbcb;
+    height: 180px;
+    border-radius: 10px;
+    box-sizing: border-box;
+    position: relative;
+    margin-right: 50px;
+    margin-bottom: 90px;
+    font-size: 16px;
+}
+.con-box .step ul li::after {
+    content: '';
+    background-image: url(../images/arrow-down.jpg);
+    position: absolute;
+    left: 212px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 25px;
+    height: 25px;
+}
+.con-box .step ul li:last-child::after {
+    content: none;
+}
+.con-box .step ul li:last-child {
+    margin-right: 0;
+}
+.con-box .step ul li img {
+    padding: 40px 70px;
+}
+.con-box .step ul li p {
+    width: 80px;
+    height: 30px;
+    /* border: 1px solid #000; */
+    border-radius: 30px;
+    text-align: center;
+    line-height: 30px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 40px;
+    background: #106e6e;
+    color: white;
+}
+
+.con-box .step .btn {
+    display: flex;
+}
+.con-box .step .btn > p {
+    margin-right: 80px;
+    font-size: 18px;
+    margin-bottom: 60px;
+}
+.con-box .step .btn > button {
+    height: 35px;
+    font-size: 18px;
+    color: #797979;
+    border: 1px solid #cbcbcb;
+    background: white;
+    cursor: pointer;
+}
+.con-box .step .btn > button:nth-of-type(1) {
+    margin-right: 15px;
+    width: 160px;
+}
+.con-box .step .btn > button:nth-of-type(2) {
+    width: 225px;
+}
+.con-box .step .line {
+    width: 100%;
+    height: 1px;
+    background: #cbcbcb;
+    margin-bottom: 60px;
+}
+.con-box .step .table {
+}
+.con-box .table h4 {
+    color: #106e6e;
+    font-weight: 700;
+    font-size: 24px;
+    margin-bottom: 40px;
+}
+
+.con-box .table table {
+    text-align: center;
+    width: 100%;
+}
+.con-box .table table tr {
+}
+.con-box .table table tr th {
+    border: 1px solid #cbcbcb;
+    width: 200px;
+    height: 55px;
+    vertical-align: middle;
+}
+.con-box .table table tr:nth-child(2) td:nth-child(2),
+.con-box .table table tr:nth-child(3) td:nth-child(2),
+.con-box .table table tr:nth-child(4) td:nth-child(2) {
+    text-align: left;
+    padding: 20px 10px;
+}
+
+.con-box .table table tr th:nth-child(2) {
+    width: 400px;
+}
+.con-box .table table tr td {
+    border: 1px solid #cbcbcb;
+    vertical-align: middle;
+}
+
+.con-box .table table tr td:last-child {
+    color: red;
+}
+.con-box .table > .btn {
+}
+.con-box .table > button {
+    width: 610px;
+    height: 60px;
+    border-radius: 5px;
+    margin-top: 90px;
+    margin-bottom: 180px;
+    cursor: pointer;
+    background: black;
+    border: none;
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+    margin-left: 245px;
+}
+.con-box .table > button:hover {
+    background: #106e6e;
+}
+.con-box .box {
+    border: 1px solid #797979;
+    background: #f5f5f5;
+    padding: 60px 25px;
+    border-radius: 5px;
+    margin-bottom: 180px;
+}
+.con-box .box ul {
+}
+.con-box .box ul li {
+    margin-bottom: 25px;
+}
+.con-box .box ul li span {
+    color: #106e6e;
+    font-size: 22px;
+    font-weight: 700;
+}
+.con-box .box ul li strong {
+    color: red;
+    font-weight: 700;
+    font-size: 20px;
+    margin-bottom: 25px;
+    display: block;
+}
+.con-box .box ul li p {
+    font-size: 20px;
+    margin-bottom: 10px;
+    /* margin-left: 15px; */
+    padding-left: 10px;
+    position: relative;
+}
+.con-box .box ul li p::after {
+    content: '';
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    background: rgb(27, 27, 27);
+    left: 0;
+    top: 13px;
+    border-radius: 5px;
+}

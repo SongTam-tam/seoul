@@ -1,0 +1,137 @@
+.left-nav {
+    margin-top: 150px;
+}
+#container .inner {
+    display: flex;
+    justify-content: right;
+}
+.sub-tab {
+    margin-top: 250px;
+    width: 1100px;
+}
+.sub-tab h3 {
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 80px;
+}
+.sub-tab .tab {
+    display: flex;
+}
+.sub-tab .tab li {
+    width: 275px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    border: 1px solid #cbcbcb;
+    border-right: none;
+    margin-bottom: 100px;
+    cursor: pointer;
+}
+.sub-tab .tab li.on {
+    background: #009999;
+}
+.sub-tab .tab li.on a {
+    color: white;
+}
+.sub-tab .tab li:last-child {
+    border-right: 1px solid #cbcbcb;
+}
+.sub-tab .tab li a {
+    color: #797979;
+}
+.sub-tab .con-box {
+}
+.sub-tab .con-box .box {
+    display: none;
+}
+.sub-tab .con-box .box.on {
+    display: block;
+}
+.sub-tab .con-box .box h4 {
+    font-weight: 700;
+    font-size: 24px;
+    margin-bottom: 30px;
+}
+.sub-tab .con-box .box .line {
+    width: 100%;
+    height: 2px;
+    background: #797979;
+    margin-bottom: 80px;
+}
+.sub-tab .con-box .box .line:nth-child(4) {
+    background: #cbcbcb;
+}
+.sub-tab .con-box .box .list {
+    display: flex;
+    margin-bottom: 70px;
+}
+.sub-tab .con-box .box .list:last-child {
+    margin-bottom: 500px;
+}
+.sub-tab .con-box .box .list .image-box img {
+    margin-right: 80px;
+    width: 580px;
+    height: 380px;
+}
+
+/* 버튼 */
+.sub-tab .con-box .box .list .image-box .btn {
+    display: flex;
+    justify-content: center;
+    width: 580px;
+}
+.sub-tab .con-box .box .list .image-box .btn .dot {
+    width: 15px;
+    height: 15px;
+    background: #cbcbcb;
+    border-radius: 20px;
+    margin-right: 15px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.sub-tab .con-box .box .list .image-box .dot.on {
+    background: #009999;
+}
+.sub-tab .con-box .box .list:nth-of-type(4) {
+    margin-bottom: 360px;
+}
+.sub-tab .con-box .box .list .info {
+}
+.sub-tab .con-box .box .info strong {
+    font-weight: 700;
+    font-size: 20px;
+    display: block;
+}
+.sub-tab .con-box .box .info strong:nth-of-type(2) {
+    color: #106e6e;
+    display: block;
+    margin-bottom: 18px;
+}
+.sub-tab .con-box .box .info li:first-child {
+    margin-top: 18px;
+}
+.sub-tab .con-box .box .info li {
+    /* margin-bottom: 15px; */
+    font-size: 18px;
+}
+.sub-tab .con-box .box .info li:last-child {
+    margin-bottom: 52px;
+}
+.sub-tab .con-box .box .list .info table {
+    text-align: center;
+}
+.sub-tab .con-box .box .list .info table tr th {
+    border: 1px solid #cbcbcb;
+    background: #eef0f5;
+    width: 145px;
+    height: 40px;
+    vertical-align: middle;
+}
+
+.sub-tab .con-box .box .list .info table tr td {
+    border: 1px solid #cbcbcb;
+    width: 145px;
+    height: 70px;
+    vertical-align: middle;
+}

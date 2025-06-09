@@ -138,6 +138,22 @@ const footerNav = () => {
     });
 };
 
+const login = () => {
+    const loginbtn = get('#header .login .log');
+    const pop = get('.login-banner .login');
+    const bg = get('.bodybg');
+    const close = get('.xi-close');
+
+    loginbtn.addEventListener('click', (e) => {
+        pop.classList.add('on');
+        bg.classList.add('on');
+    });
+    close.addEventListener('click', (e) => {
+        pop.classList.remove('on');
+        bg.classList.remove('on');
+    });
+};
+
 const comInit = () => {
     const getPage = (page, tag) => {
         fetch(page)
