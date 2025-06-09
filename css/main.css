@@ -1,0 +1,853 @@
+@import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.min.css');
+body {
+    font-family: 'Pretendard Variable', sans-serif;
+}
+#visual {
+    width: 100%;
+    height: 1080px;
+    position: relative;
+}
+#visual .video-visual {
+    width: 100%;
+    position: absolute;
+    z-index: -10;
+    left: 0;
+    top: 0px;
+    height: 1100px;
+}
+#visual .gage {
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+#visual .gage p {
+    width: 252px;
+    height: 4px;
+    background-color: #fff;
+    position: absolute;
+    left: 100px;
+    top: 805px;
+}
+#visual .gage strong {
+    display: block;
+    width: 252px;
+    height: 4px;
+    background-color: #55a3a3;
+    transform: scaleX(0);
+    position: absolute;
+    left: 100px;
+    top: 805px;
+
+    transform-origin: left;
+}
+/* #visual .gage strong.on {
+    transform: scaleX(1);
+    transition: 20s linear;
+} */
+#visual .gage span {
+    position: absolute;
+    top: 793px;
+    left: 50px;
+    color: #fff;
+    text-align: center;
+    width: 40px;
+}
+#visual .gage .btn {
+}
+#visual .gage .btn i {
+    /* border: 1px solid #fff; */
+
+    display: block;
+}
+#visual .gage .btn .prev {
+    background-color: transparent;
+    font-size: 14px;
+    color: #fff;
+    border: 1px solid #fff;
+    border-radius: 100%;
+    position: absolute;
+    top: 795px;
+    left: 10px;
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#visual .gage .btn .next {
+    background-color: transparent;
+    font-size: 14px;
+    color: #fff;
+    border: 1px solid #fff;
+    border-radius: 100%;
+    position: absolute;
+    top: 795px;
+    left: 400px;
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* display: inline-block; */
+}
+#visual .gage .btn .stop {
+    background-color: transparent;
+    font-size: 14px;
+    color: #fff;
+    border: none;
+    position: absolute;
+    top: 795px;
+    left: 370px;
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/* visual */
+#main .therapy {
+    position: relative;
+}
+#main .therapy::after {
+    content: 'ASAN’S SPECIALTY';
+    font-size: 250px;
+    font-weight: 800;
+    position: absolute;
+    letter-spacing: 6px;
+    line-height: 1.3;
+    bottom: -190px;
+    left: 380px;
+    color: #009999;
+    /* border: 1px solid #106e6e; */
+    opacity: 0.1;
+    z-index: -1000;
+    width: 2509px;
+}
+#main .therapy .inner {
+    padding-top: 160px;
+}
+#main .therapy .inner > strong {
+    font-size: 25px;
+    font-weight: 800;
+    display: block;
+    text-align: left;
+    color: #55a3a3;
+}
+#main .therapy .inner > h2 {
+    text-align: left;
+    font-size: 50px;
+    color: #000;
+    font-weight: 700;
+    margin-top: 28px;
+}
+#main .therapy .inner > p {
+    text-align: left;
+    color: #000;
+    font-size: 20px;
+    font-weight: 400;
+    margin-top: 14px;
+    margin-bottom: 95px;
+}
+#main .therapy .inner .medical {
+}
+#main .therapy .inner .medical .con {
+    display: flex;
+    width: 1400px;
+    margin-bottom: 160px;
+}
+#main .therapy .inner .medical .con li {
+    flex: 1;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    transition: 0.8s;
+    border-right: 3px solid #fff;
+}
+#main .therapy .inner .medical .con li:last-child {
+    border-radius: 0px 20px 20px 0px;
+}
+#main .therapy .inner .medical .con li:first-child {
+    border-radius: 20px 0 0 20px;
+}
+
+#main .therapy .inner .medical .con li:hover {
+    flex: 5;
+}
+#main .therapy .inner .medical .con li a {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    width: 879px;
+    display: block;
+    height: 520px;
+    transition: 0.5s;
+}
+#main .therapy .inner .medical .con li:nth-child(1) a {
+    background-image: url(../images/therapy0.png);
+}
+#main .therapy .inner .medical .con li:nth-child(2) a {
+    background-image: url(../images/therapy1.png);
+}
+#main .therapy .inner .medical .con li:nth-child(3) a {
+    background-image: url(../images/therapy2.png);
+}
+#main .therapy .inner .medical .con li:nth-child(4) a {
+    background-image: url(../images/therapy3.png);
+}
+#main .therapy .inner .medical .con li a img {
+}
+#main .therapy .inner .medical .con li strong {
+    position: absolute;
+    left: 74px;
+    top: 394px;
+    z-index: 5;
+    width: 200px;
+    height: 41px;
+    font-size: 34px;
+    font-weight: 600;
+    color: #fff;
+    opacity: 0;
+    transition: 0.8s;
+}
+#main .therapy .inner .medical .con li strong.on {
+    top: 342px;
+    opacity: 1;
+}
+#main .therapy .inner .medical .con li p {
+    position: absolute;
+    z-index: 5;
+    left: 80px;
+    top: 450px;
+    width: 140px;
+    height: 39px;
+    border: 1px solid #fff;
+    /* padding: 10px 20px; */
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 20px;
+    line-height: 39px;
+    cursor: pointer;
+    text-align: left;
+    padding-left: 32px;
+    transition: 0.8s;
+    opacity: 0;
+}
+#main .therapy .inner .medical .con li p.on {
+    top: 401px;
+    opacity: 1;
+}
+
+#main .therapy .inner .medical .con li p i {
+    position: absolute;
+    z-index: 5;
+    left: 120px;
+    top: 50%;
+    transform: translateY(-50%);
+    vertical-align: middle;
+    margin-left: 12px;
+}
+/* therapy */
+
+/* #main .medical-staff .inner strong {
+    font-size: 25px;
+    font-weight: 800;
+    display: block;
+    text-align: center;
+    color: #55a3a3;
+}
+#main .medical-staff .inner h2 {
+    text-align: center;
+    font-size: 50px;
+    color: #fff;
+    font-weight: 700;
+    margin-top: 28px;
+}
+#main .medical-staff .inner p {
+    text-align: center;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 400;
+    margin-top: 14px;
+} */
+#main .medical-staff {
+    background-image: url(../images/img_BG.png);
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+}
+#main .medical-staff .inner {
+    padding-top: 160px;
+    height: 920px;
+    /* overflow: hidden; */
+    /* border: 1px solid #fff; */
+}
+#main .medical-staff .inner strong {
+    font-size: 25px;
+    font-weight: 800;
+    display: block;
+    text-align: center;
+    color: #55a3a3;
+}
+#main .medical-staff .inner h2 {
+    text-align: center;
+    font-size: 50px;
+    color: #fff;
+    font-weight: 700;
+    margin-top: 28px;
+}
+#main .medical-staff .inner p {
+    text-align: center;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 400;
+    margin-top: 14px;
+}
+#main .medical-staff .inner .staff .con {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    transition: 0.5s;
+    /* margin-top: 100px; */
+}
+#main .medical-staff .inner .staff .con > li {
+    margin-top: 130px;
+    width: 300px;
+    height: 410px;
+    border-radius: 220px;
+    background-color: #fff;
+    margin-left: 30px;
+    overflow: hidden;
+    transition: 0.3s;
+}
+#main .medical-staff .inner .staff .con > li:nth-child(1) {
+    position: absolute;
+    left: -300px;
+    top: 0;
+}
+#main .medical-staff .inner .staff .con > li:nth-child(2) {
+    position: absolute;
+    left: 30px;
+    top: 0;
+}
+#main .medical-staff .inner .staff .con > li:nth-child(3) {
+    position: absolute;
+    left: 360px;
+    top: 0;
+}
+#main .medical-staff .inner .staff .con > li:nth-child(4) {
+    position: absolute;
+    left: 690px;
+    top: 0;
+}
+#main .medical-staff .inner .staff .con > li:nth-child(5) {
+    position: absolute;
+    left: 1020px;
+    top: 0;
+}
+#main .medical-staff .inner .staff .con > li:nth-child(6) {
+    position: absolute;
+    left: 1350px;
+    top: 0;
+}
+#main .medical-staff .inner .staff .con > li:nth-child(7) {
+    position: absolute;
+    left: 1680px;
+    top: 0;
+}
+#main .medical-staff .inner .staff .con > li:nth-child(8) {
+    position: absolute;
+    left: 2010px;
+    top: 0;
+}
+#main .medical-staff .inner .staff .con > li:nth-child(9) {
+    position: absolute;
+    left: 2360px;
+    top: 0;
+}
+#main .medical-staff .inner .staff .con > li:nth-child(10) {
+    position: absolute;
+    left: 2710px;
+    top: 0;
+}
+
+#main .medical-staff .inner .staff .con > li a {
+}
+#main .medical-staff .inner .staff .con > li a img {
+}
+#main .medical-staff .inner .staff .con li .con-box li {
+    width: 300px;
+    height: 410px;
+    background-color: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(10px);
+    position: absolute;
+    left: 0;
+    top: 500px;
+    transition: 0.5s;
+}
+#main .medical-staff .inner .staff .con li .con-box li strong {
+    font-size: 18px;
+    font-weight: 700;
+    color: #106e6e;
+    margin-top: 186px;
+    display: block;
+    text-align: left;
+    margin-left: 28px;
+    line-height: 1.3;
+}
+#main .medical-staff .inner .staff .con li .con-box li p:nth-child(2) {
+    display: block;
+    text-align: left;
+    margin-left: 28px;
+    font-size: 26px;
+    font-weight: 700;
+    color: #282828;
+    margin-top: 6px;
+    line-height: 1.3;
+}
+#main .medical-staff .inner .staff .con li .con-box li p:nth-child(3) {
+    display: block;
+    text-align: left;
+    margin-left: 28px;
+    color: #282828;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 1.3;
+    margin-top: 6px;
+}
+#main .medical-staff .inner .staff .con li .con-box li span {
+    position: absolute;
+    top: 252px;
+    left: 92px;
+    font-size: 20px;
+    font-weight: 400;
+    color: #282828;
+}
+#main .medical-staff .inner .staff .con li .con-box li span::after {
+    content: '';
+    width: 1.5px;
+    height: 18px;
+    background-color: #797979;
+    position: absolute;
+    left: -6px;
+    top: 55%;
+    transform: translateY(-50%);
+}
+#main .medical-staff .inner .staff .con li .con-box li button {
+    margin-left: 76px;
+    width: 149px;
+    height: 39px;
+    background-color: black;
+    border: none;
+    cursor: pointer;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+    position: relative;
+    text-align: left;
+    padding-left: 20px;
+    border-radius: 20px;
+    margin-top: 40px;
+    vertical-align: middle;
+}
+#main .medical-staff .inner .staff .con li .con-box li button.on {
+    background-color: #0b4b4b;
+}
+
+#main .medical-staff .inner .staff .con li .con-box li button i {
+    position: absolute;
+    left: 115px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 20px;
+}
+/* medical-staff */
+#main .hospital {
+    position: relative;
+    height: 1185px;
+}
+#main .hospital::before {
+    background-color: #282828;
+    height: 1185px;
+    z-index: -1000;
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 1185px;
+}
+#main .hospital .bg {
+    background-image: url(../images/asan0.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0 0;
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 1185px;
+    opacity: 0.1;
+    z-index: -100;
+}
+#main .hospital .inner {
+    padding-top: 160px;
+}
+#main .hospital .inner h2 {
+    font-size: 50px;
+    font-weight: 700;
+    color: #fff;
+    text-align: center;
+}
+#main .hospital .inner p {
+    font-size: 20px;
+    font-weight: 400;
+    color: #fff;
+    text-align: center;
+    margin-top: 14px;
+    margin-bottom: 88px;
+}
+#main .hospital .inner .pic {
+    width: 1400px;
+    height: 579px;
+    overflow: hidden;
+    cursor: pointer;
+}
+#main .hospital .inner .pic a {
+    background-image: url(../images/asan0.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0 0;
+    display: block;
+    width: 1400px;
+    height: 579px;
+}
+
+#main .hospital .inner .next {
+    position: absolute;
+    background-color: transparent;
+    border: none;
+    font-size: 20px;
+    transform: rotate(90deg);
+    right: 360px;
+    top: 1007px;
+    color: #c6c6c6;
+    cursor: pointer;
+}
+#main .hospital .inner .prev {
+    position: absolute;
+    background-color: transparent;
+    border: none;
+    font-size: 20px;
+    transform: rotate(-90deg);
+    left: 360px;
+    top: 1007px;
+    color: #c6c6c6;
+    cursor: pointer;
+}
+#main .hospital .inner .hidden {
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    gap: 16px;
+    width: 574px;
+    height: 46px;
+    margin-left: 414px;
+    margin-top: 28px;
+    /* border: 1px solid #000; */
+    position: relative;
+}
+#main .hospital .inner .hidden-pic {
+}
+#main .hospital .inner .hidden-pic .hidden li {
+    width: 180px;
+    height: 44px;
+    border: 1px solid #f5f5f5;
+    border-radius: 50px;
+    cursor: pointer;
+    flex-shrink: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    /* float: left; */
+    /* position: absolute; */
+}
+#main .hospital .inner .hidden-pic .hidden li.on {
+    border: none;
+    background-color: #106e6e;
+}
+#main .hospital .inner .hidden-pic .hidden li.onn {
+    border: 1px solid #fff;
+    background-color: #106e6e;
+}
+#main .hospital .inner .hidden-pic .hidden li:nth-child(1) {
+    left: 0;
+}
+#main .hospital .inner .hidden-pic .hidden li:nth-child(2) {
+    left: 196px;
+}
+#main .hospital .inner .hidden-pic .hidden li:nth-child(3) {
+    left: 392px;
+}
+#main .hospital .inner .hidden-pic .hidden li:nth-child(4) {
+    left: 588px;
+}
+#main .hospital .inner .hidden-pic .hidden li:nth-child(5) {
+    left: 784px;
+}
+#main .hospital .inner .hidden-pic .hidden li:nth-child(6) {
+    left: 784px;
+}
+#main .hospital .inner .hidden-pic .hidden li:nth-child(7) {
+    left: 784px;
+}
+#main .hospital .inner .hidden-pic .hidden li:nth-child(8) {
+    left: 784px;
+}
+#main .hospital .inner .hidden-pic .hidden li p {
+    font-size: 18px;
+    color: #fff;
+    font-weight: 400;
+    line-height: 13px;
+    /* margin-bottom: 11px; */
+    cursor: pointer;
+}
+#main .youtube {
+    position: relative;
+    width: 100%;
+
+    background: linear-gradient(rgba(228, 228, 228, 1) 0%, rgba(255, 255, 255, 1) 56%);
+}
+#main .youtube .inner {
+    padding-top: 160px;
+    height: 1044px;
+}
+#main .youtube .inner > strong {
+    font-size: 25px;
+    font-weight: 800;
+    display: block;
+    text-align: center;
+    color: #55a3a3;
+}
+#main .youtube .inner > h2 {
+    text-align: center;
+    font-size: 50px;
+    color: #000;
+    font-weight: 700;
+    margin-top: 28px;
+    margin-bottom: 95px;
+}
+#main .youtube .inner .pic {
+    background-image: url(../images/phon.png);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-size: cover;
+    background-color: transparent;
+    height: 824px;
+    width: 587px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 372px;
+    z-index: 5;
+}
+
+#main .youtube .inner .pic > span {
+    font-size: 20px;
+    font-weight: 400;
+    color: #fff;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 106px;
+    display: block;
+    text-align: center;
+    width: 360px;
+    line-height: 1.3;
+}
+#main .youtube .inner .rotate {
+    display: flex;
+    /* overflow: hidden; */
+}
+#main .youtube .inner .rotate li {
+    position: absolute;
+}
+#main .youtube .inner .rotate li:nth-child(1) {
+    top: 556px;
+    left: 455px;
+
+    z-index: 100;
+}
+#main .youtube .inner .rotate li:nth-child(2) {
+    top: 589px;
+    left: 907px;
+}
+#main .youtube .inner .rotate li:nth-child(3) {
+    top: 589px;
+    left: 1410px;
+}
+#main .youtube .inner .rotate li:nth-child(4) {
+    top: 589px;
+    right: 1410px;
+}
+#main .youtube .inner .rotate li:nth-child(5) {
+    top: 589px;
+    right: 907px;
+}
+#main .youtube .inner .rotate li img {
+}
+#main .youtube .inner .gage {
+    position: absolute;
+    left: 622.5px;
+    top: 862px;
+    z-index: 10;
+    width: 156px;
+    height: 14px;
+    background-color: #eef0f5;
+    overflow: hidden;
+    border-radius: 10px;
+}
+#main .youtube .inner .gage2 {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    z-index: 10;
+    width: 156px;
+    height: 14px;
+    background-color: #60cdc7;
+    border-radius: 10px;
+    /* transition: 5s;
+    transform: scaleX(0); */
+    transform-origin: left;
+}
+#main .youtube .main-footer {
+    width: 1920px;
+    height: 239px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background-color: #f5f5f5;
+    z-index: 100;
+    box-shadow: 10px 10px 100px rgba(0, 0, 0, 0.2);
+}
+#main .youtube .main-footer .main-inner {
+    width: 1400px;
+    margin: auto;
+}
+
+#main .youtube .main-footer .main-inner .list {
+    margin-top: 77px;
+    display: flex;
+}
+#main .youtube .main-footer .main-inner .list li {
+    display: flex;
+    margin-left: 14px;
+    width: 341px;
+    cursor: pointer;
+}
+#main .youtube .main-footer .main-inner .list li:first {
+    margin-left: 0;
+}
+#main .youtube .main-footer .main-inner .list li a {
+    display: block;
+    background-color: #0b4b4b;
+    width: 84px;
+    height: 84px;
+    border-radius: 100%;
+    text-align: center;
+}
+#main .youtube .main-footer .main-inner .list li a img {
+    margin-top: 21px;
+    width: 40px;
+    height: 40px;
+    transition: 0.3s;
+}
+#main .youtube .main-footer .main-inner .list li:hover a img {
+    margin-top: 18px;
+    width: 48px;
+    height: 48px;
+}
+#main .youtube .main-footer .main-inner .list li:nth-child(3) a {
+    display: block;
+    background-color: #009999;
+}
+#main .youtube .main-footer .main-inner .list li:nth-child(4) a {
+    display: block;
+    background-color: #009999;
+}
+#main .youtube .main-footer .main-inner .list li .p {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    /* border: 1px solid #000; */
+    width: 239px;
+}
+#main .youtube .main-footer .main-inner .list li .p strong {
+    font-size: 24px;
+    font-weight: 800;
+    color: #282828;
+    margin-bottom: 6px;
+    line-height: 1;
+    margin-left: 18px;
+}
+#main .youtube .main-footer .main-inner .list li .p p {
+    margin-bottom: 10px;
+    font-size: 18px;
+    font-weight: 400;
+    color: #797979;
+    line-height: 1;
+    margin-left: 18px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+#main .youtube .main-footer .main-inner .list li .p span {
+    font-size: 14px;
+    font-weight: 600;
+    color: #0b4b4b;
+    line-height: 1;
+    margin-left: 18px;
+    transition: 0.3s;
+}
+#main .youtube .main-footer .main-inner .list li:hover .p span {
+    font-weight: 800;
+}
+#main .youtube .main-footer .main-inner .list li:nth-child(3) .p span {
+    color: #009999;
+}
+#main .youtube .main-footer .main-inner .list li:nth-child(4) .p span {
+    color: #009999;
+}
+#main .youtube .main-footer .main-inner .list li:nth-child(1) .p i {
+    background-color: #106e6e;
+}
+#main .youtube .main-footer .main-inner .list li:nth-child(2) .p i {
+    background-color: #106e6e;
+}
+#main .youtube .main-footer .main-inner .list li .p i {
+    position: absolute;
+    right: 150px;
+    bottom: 11px;
+    background-color: #009999;
+    display: block;
+    width: 16px;
+    height: 16px;
+    font-size: 10px;
+    text-align: center;
+    line-height: 16px;
+    color: #fff;
+    border-radius: 100%;
+    transform: scale(0.9);
+    transition: 0.3s;
+}
+#main .youtube .main-footer .main-inner .list li:hover .p i {
+    transform: scale(1);
+}

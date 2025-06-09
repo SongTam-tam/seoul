@@ -1,0 +1,490 @@
+#container .deep-inner {
+    margin-top: 150px;
+    margin-left: 220px;
+    padding-left: 80px;
+    position: relative;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+#container .deep-inner h2 {
+    margin-top: 48px;
+    font-size: 30px;
+    font-weight: 700;
+    color: #0a2525;
+    margin-bottom: 28px;
+}
+#container .deep-inner strong {
+    display: block;
+    margin-top: 30px;
+    margin-bottom: 18px;
+    font-size: 30px;
+    font-weight: 700;
+    color: #009999;
+}
+#container .deep-inner .parking-information {
+    margin-bottom: 26px;
+}
+#container .deep-inner .parking-information img {
+    width: 1100px;
+}
+#container .deep-inner .parking-fee {
+}
+#container .deep-inner .parking-fee .parking-table {
+}
+#container .deep-inner .parking-fee .parking-table colgroup {
+}
+#container .deep-inner .parking-fee .parking-table colgroup .w1 {
+    width: 285px;
+}
+#container .deep-inner .parking-fee .parking-table colgroup .w2 {
+    width: 265px;
+}
+#container .deep-inner .parking-fee .parking-table colgroup .w3 {
+    width: 265px;
+}
+#container .deep-inner .parking-fee .parking-table colgroup .w4 {
+    width: auto;
+}
+#container .deep-inner .parking-fee .parking-table thead {
+}
+#container .deep-inner .parking-fee .parking-table thead tr {
+    height: 45px;
+    text-align: center;
+    background-color: #f0f3f2;
+}
+#container .deep-inner .parking-fee .parking-table thead tr th {
+    border-top: 1px solid #009999;
+    border-bottom: 1px solid #d3d3d3;
+    border-right: 1px solid #d3d3d3;
+    vertical-align: middle;
+    font-size: 15px;
+    font-weight: 700;
+    color: #009999;
+}
+#container .deep-inner .parking-fee .parking-table thead tr th:last-child {
+    border-right: none;
+}
+#container .deep-inner .parking-fee .parking-table tbody {
+}
+#container .deep-inner .parking-fee .parking-table tbody tr {
+    height: 45px;
+    text-align: center;
+}
+#container .deep-inner .parking-fee .parking-table tbody tr td {
+    border-bottom: 1px solid #d3d3d3;
+    border-right: 1px solid #d3d3d3;
+    vertical-align: middle;
+}
+#container .deep-inner .parking-fee .parking-table tbody tr td:last-child {
+    border-right: none;
+}
+#container .deep-inner span {
+    font-size: 14px;
+    font-weight: 400;
+    margin-top: 16px;
+    margin-left: 15px;
+    color: #009999;
+    display: block;
+    position: relative;
+}
+#container .deep-inner span::after {
+    content: '';
+    position: absolute;
+    left: -10px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 5px;
+    height: 5px;
+    border-radius: 100%;
+    background-color: #009999;
+    display: block;
+}
+#container .parking-number {
+}
+#container .parking-number strong {
+}
+#container .parking-number .con1 {
+    text-align: center;
+}
+#container .parking-number .con1 strong {
+    color: #000;
+    font-size: 24px;
+    margin-bottom: 32px;
+    margin-top: 5px;
+}
+#container .parking-number .con1 .con2 {
+}
+#container .parking-number .con1 .con2 .con-box {
+    display: flex;
+    justify-content: center;
+}
+#container .parking-number .con1 .con2 .con-box li {
+    box-sizing: border-box;
+    margin-right: 75px;
+    text-align: center;
+    margin-top: 32px;
+}
+#container .parking-number .con1 .con2 .con-box li:last-child {
+    margin-right: 0;
+}
+#container .parking-number .con1 .con2 .con-box li a {
+    width: 220px;
+    height: 226px;
+    border: 4px solid #106e6e;
+    display: block;
+    box-sizing: border-box;
+}
+#container .parking-number .con1 .con2 .con-box li a img {
+    margin-top: 79px;
+    transform: scale(1.2);
+}
+#container .parking-number .con1 .con2 .con-box li p {
+    margin-top: 15px;
+    font-size: 18px;
+    font-weight: 700;
+    color: #009999;
+}
+#container .parking-number .con1 .con2 .con-box li span::after {
+    content: none;
+}
+#container .parking-number .con1 .con2 .con-box li span {
+    font-size: 14px;
+    font-weight: 400;
+    margin: 0;
+    margin-top: 5px;
+    color: black;
+}
+#container .parking-number .cocon {
+    font-size: 14px;
+    color: #000;
+    margin-bottom: 10px;
+    text-align: right;
+    margin-top: 40px;
+}
+#container .parking-number .number-table {
+    width: 1100px;
+}
+#container .parking-number .number-table colgroup {
+}
+#container .parking-number .number-table colgroup .w1 {
+    width: 402px;
+}
+#container .parking-number .number-table colgroup .w2 {
+    width: 362px;
+}
+#container .parking-number .number-table colgroup .w3 {
+    width: auto;
+}
+#container .parking-number .number-table thead {
+}
+#container .parking-number .number-table thead tr {
+    text-align: center;
+    height: 48px;
+    background-color: #f0f3f2;
+}
+#container .parking-number .number-table thead tr th {
+    vertical-align: middle;
+    border-top: 1px solid #106e6e;
+    border-bottom: 1px solid #d3d3d3;
+    border-right: 1px solid #d3d3d3;
+    font-size: 16px;
+    font-weight: 700;
+    color: #009999;
+}
+#container .parking-number .number-table thead tr th:last-child {
+    border-right: none;
+}
+#container .parking-number .number-table tbody {
+}
+#container .parking-number .number-table tbody tr {
+    height: 70px;
+    text-align: center;
+}
+#container .parking-number .number-table tbody tr td {
+    vertical-align: middle;
+    border-bottom: 1px solid #d3d3d3;
+    border-right: 1px solid #d3d3d3;
+    font-size: 16px;
+    font-weight: 400;
+    color: #000;
+}
+#container .parking-number .number-table tbody tr:first-child td:last-child {
+    border-right: none;
+}
+#container .parking-number .number-table tbody tr:first-child td:last-child span {
+    margin: 0;
+    font-size: 15px;
+    font-weight: 400;
+    color: #333;
+}
+#container .parking-number .number-table tbody tr:first-child td:last-child span::after {
+    content: none;
+}
+/* .self span::after {
+    content: none;
+} */
+#container .self {
+}
+#container .self .cocon {
+    font-size: 16px;
+    color: #000;
+    margin-bottom: 30px;
+
+    margin-top: 40px;
+}
+#container .self .con1 {
+    position: relative;
+}
+#container .self .con1 strong {
+    color: #000;
+    font-size: 24px;
+    margin-bottom: 32px;
+    margin-top: 5px;
+}
+#container .self .con1 .con2 {
+    background-color: #f0f3f2;
+    padding: 10px;
+    width: 1080px;
+    height: 260px;
+    display: flex;
+    justify-content: left;
+    position: relative;
+    text-align: center;
+    overflow: hidden;
+    transition: 1s;
+}
+#container .self .con1 .con2.on {
+    height: 1480px;
+}
+#container .self .con1 .con2 .more {
+    position: absolute;
+    right: 50%;
+    transform: translateY(-50%);
+    top: 240px;
+    color: #009999;
+    font-size: 25px;
+    display: block;
+    cursor: pointer;
+    z-index: 10;
+}
+
+#container .self .con1 .more::after {
+    content: none;
+}
+#container .self .con1 .con2 .con-box {
+    display: flex;
+    /* align-items: center; */
+}
+#container .self .con1 .con2 .con-box li {
+    margin-top: 8px;
+    width: 220px;
+    height: 226px;
+    background-color: #fff;
+    display: block;
+    box-sizing: border-box;
+    margin-left: 20px;
+}
+#container .self .con1 .con2 .con-box li:first-child {
+    margin-left: 10px;
+}
+#container .self .con1 .con2 .con-box li a {
+}
+#container .self .con1 .con2 .con-box li a img {
+    margin-top: 40px;
+}
+#container .self .con1 .con2 .con-box li p {
+    margin-top: 15px;
+    font-size: 18px;
+    font-weight: 700;
+    color: #009999;
+}
+#container .self .con1 .con2 .con-box li span {
+    font-size: 14px;
+    font-weight: 400;
+    margin: 0;
+    margin-top: 5px;
+    color: black;
+}
+#container .self .con1 .con2 .con-box2 {
+}
+#container .self .con1 .con2 .con-box2 li {
+    width: 330px;
+    height: 108px;
+    background-color: #fff;
+    display: block;
+    box-sizing: border-box;
+    margin-left: 20px;
+    margin-top: 8px;
+}
+#container .self .con1 .con2 .con-box2 li a {
+}
+#container .self .con1 .con2 .con-box2 li a img {
+}
+#container .self .con1 .con2 .con-box2 li p {
+    font-size: 18px;
+    font-weight: 700;
+    color: #009999;
+}
+#container .self .con1 .con2 .con-box2 li span {
+    font-size: 14px;
+    font-weight: 400;
+    margin: 0;
+
+    color: black;
+}
+#container .self .con1 .con2 .con-box li span::after {
+    content: none;
+}
+#container .self .con1 .con2 .con-box2 li span::after {
+    content: none;
+}
+#container .self span:last-child {
+    margin-top: 0;
+}
+/* self */
+#container .period {
+    margin-bottom: 100px;
+}
+#container .period strong {
+}
+#container .period .con1 {
+    text-align: center;
+}
+#container .period .con1 strong {
+    color: #000;
+    font-size: 24px;
+    margin-bottom: 32px;
+    margin-top: 5px;
+}
+#container .period .con1 .con2 {
+}
+#container .period .con1 .con2 .con-box {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+#container .period .con1 .con2 .con-box li {
+    box-sizing: border-box;
+    margin-right: 75px;
+    text-align: center;
+    margin-top: 32px;
+}
+#container .period .con1 .con2 .con-box li:last-child {
+    margin-right: 0;
+}
+#container .period .con1 .con2 .con-box li a {
+    width: 220px;
+    height: 226px;
+    border: 4px solid #106e6e;
+    display: block;
+    box-sizing: border-box;
+}
+#container .period .con1 .con2 .con-box li a img {
+    margin-top: 79px;
+    transform: scale(1.2);
+}
+#container .period .con1 .con2 .con-box li p {
+    margin-top: 15px;
+    font-size: 18px;
+    font-weight: 700;
+    color: #009999;
+}
+#container .period.con1 .con2 .con-box li span::after {
+    content: none;
+}
+#container .period .con1 .con2 .con-box li span {
+    font-size: 14px;
+    font-weight: 400;
+    margin: 0;
+    margin-top: 5px;
+    color: black;
+}
+#container .period .con1 .con2 .con-box li span::after {
+    content: none;
+}
+#container .period .cocon {
+    font-size: 14px;
+    color: #000;
+    margin-bottom: 10px;
+    text-align: right;
+    margin-top: 40px;
+}
+#container .period .cocon1 {
+    font-size: 16px;
+    color: #000;
+    font-weight: 700;
+    margin-bottom: 0;
+    text-align: left;
+    margin-top: 40px;
+}
+#container .period .cocon2 {
+    font-size: 14px;
+    color: #000;
+    font-weight: 400;
+    margin-bottom: 0;
+    text-align: left;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+#container .self .con1 .con2 .content-div {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 250px;
+    left: 20px;
+}
+#container .self .con1 .con2 .content-div .content {
+    text-align: left;
+}
+#container .self .con1 .con2 .content-div .content li {
+    width: 1050px;
+    height: 226px;
+    background-color: #fff;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+}
+#container .self .con1 .con2 .content-div .content li img {
+    height: 80px;
+    margin-left: 60px;
+}
+#container .self .con1 .con2 .content-div .content li p {
+    margin-left: 60px;
+    margin-top: 12px;
+    font-size: 14px;
+    color: #333;
+    font-weight: 400;
+}
+#container .self .con1 .con2 .content-div .content li p:first-child {
+    margin-top: 0;
+}
+#container .self .con1 .con2 .content-div .content-box1 {
+}
+#container .self .con1 .con2 .content-div .content-box1 li img {
+    margin-left: 75px;
+}
+#container .self .con1 .con2 .content-div .content-box1 li p {
+    margin-left: 73px;
+}
+#container .self .con1 .con2 .content-div .content p {
+}
+#container .self .con1 .con2 .content-div .content p:last-child {
+}
+#container .self .con1 .con2 .content-div .content strong {
+    font-size: 20px;
+    font-weight: 700;
+    color: #fff;
+    display: block;
+    width: 105px;
+    height: 100px;
+    line-height: 100px;
+    text-align: center;
+    margin-left: 40px;
+    margin-bottom: 0;
+}
+#container .self .con1 .con2 .content-div .content-box4 strong {
+    background-color: #e9880b;
+}
+#container .self .con1 .con2 .content-div .content-box5 strong {
+    background-color: #009999;
+}
